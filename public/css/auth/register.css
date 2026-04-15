@@ -1,0 +1,177 @@
+.area-registro {
+    background-size: cover;
+    background-position: center;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.registro-wrap {
+    max-width: 820px;   /* Más ancho */
+    width: 100%;
+    background: #fcfcfc;
+    border-radius: 18px;
+    box-shadow: 0 8px 28px rgba(44,62,80,.12);
+    padding: 3.2rem 3.4rem 2.2rem 3.4rem;
+    margin-right: 6%;
+    margin-left: 0;
+    z-index: 2;
+    margin-top: 3.5%;
+}
+
+.titulo-registro {
+    font-weight: 800;
+    font-size: 1.55rem;
+    color: #222;
+    letter-spacing: 0.02em;
+}
+
+.texto-registro {
+    font-size: .95rem;
+    font-weight: 600;
+    color: #6d6d6d;
+}
+
+form .row {
+    margin-bottom: 1rem;
+}
+
+.campo-registro {
+    min-height: 46px;
+    border: 1.5px solid #b7b7b7;
+    border-radius: 10px;
+    padding: .7rem 1.1rem;
+    font-size: 1rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+.campo-registro:focus {
+    border-color: #f15025;
+    box-shadow: 0 0 0 .18rem rgba(241,80,37, .19);
+}
+
+/* Botones personalizados */
+.boton-registro,
+.area-registro .btn {
+    font-size: .97rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .6px;
+    border-radius: 10px;
+}
+.boton-registro {
+    background: linear-gradient(90deg, #ff414d 0%, #ff9234 100%);
+    color: #fff;
+    padding: .53rem 1.4rem;
+    border: none;
+    transition: background 0.2s;
+}
+.boton-registro:hover {
+    background: linear-gradient(90deg, #f15025 0%, #ff6f3c 100%);
+}
+.boton-registro-secundario {
+    background: #ff9234;
+    color: #fff;
+    margin-top: 4px;
+    transition: background 0.2s;
+}
+.boton-registro-secundario:hover {
+    background: #ffbb71;
+    color: #fff;
+}
+
+.link-olvido {
+    color: #ff414d;
+    font-size: .85rem;
+}
+.link-olvido:hover {
+    text-decoration: underline;
+}
+
+.input-icono {
+    position: relative;
+    width: 100%;
+}
+.input-icono input {
+    padding-right: 42px;
+}
+.icono-ojo {
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #b7b7b7;
+    z-index: 3;
+    transition: color .2s;
+}
+.icono-ojo:hover {
+    color: #ff414d;
+}
+
+/* Laptop menos de 1440px */
+@media (max-width: 1440px) {
+    .registro-wrap {
+        max-width: 700px;
+        padding: 2.4rem 2rem 1.4rem 2rem;
+        margin-right: 3vw;
+        margin-top: 80px;
+    }
+}
+
+/* iPad Pro y tablets grandes (1024px - 1100px) */
+@media (max-width: 1100px) {
+    .area-registro { justify-content: center; padding-top: 40px; min-height: 180px; }
+    .registro-wrap {
+        max-width: 60vw;
+        padding: 2rem 2rem;
+        margin-top: 80px;
+    }
+}
+
+/* Tablet vertical y notebook pequeño */
+@media (max-width: 900px) {
+    .area-registro { justify-content: center; padding-top: 40px; min-height: 180px; }
+    .registro-wrap {
+        max-width: 80vw;
+        padding: 2rem 2rem;
+    }
+    .titulo-registro { font-size: 1.22rem; }
+    .campo-registro { font-size: 0.98rem; padding: .65rem .8rem; }
+    .boton-registro, .boton-registro-secundario { font-size: .94rem; }
+}
+
+/* Celular grande (600px - 768px) */
+@media (max-width: 768px) {
+    .area-registro { justify-content: center; padding-top: 40px; min-height: 180px; }
+    .registro-wrap { max-width: 80vw; padding: 2rem 2rem; }
+    .titulo-registro { font-size: 1.09rem; }
+    form .row { margin-bottom: .7rem; }
+}
+
+/* Celular común (hasta 576px) */
+@media (max-width: 576px) {
+    .registro-wrap {
+        padding: 2rem 2rem;
+        margin-top: 3vw;
+        border-radius: 8px;
+        max-width: 80vw;
+    }
+    .campo-registro {
+        font-size: 0.93rem;
+        padding: .52rem .5rem;
+        min-height: 36px;
+    }
+    .input-icono input { padding-right: 36px; }
+    .icono-ojo { right: 10px; }
+}
+
+/* Celular chico (Galaxy Fold, iPhone SE, <=400px) */
+@media (max-width: 400px) {
+    .registro-wrap { padding: 2rem 2rem; }
+    .titulo-registro { font-size: .95rem; }
+}

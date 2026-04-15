@@ -1,0 +1,166 @@
+.ebook-banner {
+    position: relative;
+    background-image: url("/img/ebook/header_t.jpeg");
+    background-size: 100% 100%;
+    height: 450px;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    overflow-y: hidden;
+    z-index: 0;
+}
+
+.icono-ebook {
+    width: 75px;
+    padding: 0px;
+}
+
+.imagen-dedo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.button-descargar {
+    /*padding-left: 80px;*/
+    margin-top: 0px;
+    background: #f9be13;
+    border-radius: 10px;
+    border: 0;
+    font-size: 35px;
+    outline: 0;
+    transition: 0.3s ease;
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    width: fit-content;
+    
+}
+
+.button-descargar:hover {
+    box-shadow: 0 8px 11px -3px #848383;
+}
+
+.left-blockk {
+    height: 600px;
+    width: 100%;
+}
+
+.box-ebooks {
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.info_foto_mas_boton_ebook {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.mano_iconos_ebook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.portada_mas_titulo_ebook_info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo_informativo_ebook {
+    position: absolute;
+}
+
+.titulo_informativo_ebook h1,
+.titulo_informativo_ebook h2 {
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-family: serif;
+}
+
+/*MEJORAR FORMULARIO PARA VERIFIAR EL VOUCHER*/
+#form_verificar_voucher .form-group-1 {
+    /*background-color: green;*/
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+#form_verificar_voucher .form-group-1>img {
+    max-width: 60%;
+}
+
+.inputs_verificar_voucher {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #ffffff;
+    font-family: Arial;
+}
+.titulo-form-ebook{
+    font-size: 1.75rem;
+    font-weight: 700;
+
+}
+
+@media(min-width:768px) {
+    .imagen-dedo {
+        display: flex;
+        justify-content: center;
+        width: 45%;
+    }
+
+    .info_foto_mas_boton_ebook {
+        flex-direction: row;
+    }
+
+    .mano_iconos_ebook {
+        flex-direction: row-reverse;
+    }
+}
+
+@media(max-width: 992px) {
+    .ebook-banner::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.5);
+
+    }
+
+    .ebook-banner>* {
+        position: relative;
+        z-index: 2;
+    }
+
+    .ebook-banner {
+        background-image: url("/img/ebook/header.png");
+        background-size: cover;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .box-ebooks-iconos {
+        float: left;
+        width: 30% !important;
+    }
+}

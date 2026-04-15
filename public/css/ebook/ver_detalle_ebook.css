@@ -1,0 +1,90 @@
+.section_ver_detalle_ebook {
+    background-color: white;
+}
+
+.detalle_p_primera_parte>img {
+    width: 260px;
+}
+
+.detalle_p_primera_parte>button {
+    border: none;
+    background: var(--rojo, #E53E3E);
+    /* valor por defecto si no se define --rojo */
+    padding: 10px 25px;
+    margin: 8px 0;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.presentacion_principal_detalle_ebook {
+    background-color: rgb(233 233 233);
+    color: #000000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 200px auto;
+    width: 60%;
+    padding: 30px;
+    gap: 25px;
+}
+
+
+.detalle_p_segunda_parte {
+    width: 100%;
+}
+
+.detalle_p_tercera_parte {
+    background-color: white;
+    padding: 20px;
+}
+
+.detalle_p_tercera_parte>button {
+    border: none;
+    background: var(--rojo);
+    padding: 4px 20px;
+    margin: 6px;
+    color: white;
+    transition: all 0.3s;
+}
+
+.detalle_p_tercera_parte>button:hover {
+    background: white;
+    color: black;
+}
+
+.detalle_p_tercera_parte {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.detalle_p_tercera_parte>button {
+    border: none;
+    background: var(--rojo, #E53E3E);
+    /* valor por defecto si no se define --rojo */
+    padding: 10px 25px;
+    margin: 8px 0;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.detalle_p_tercera_parte>button:hover {
+    background: white;
+    color: var(--rojo, #E53E3E);
+    border: 1px solid var(--rojo, #E53E3E);
+}
+
+.detalle_p_tercera_parte>button.activo {
+    background-color: #505050;
+    color: #fff;
+    border: 2px solid var(--rojo, #E53E3E);
+}

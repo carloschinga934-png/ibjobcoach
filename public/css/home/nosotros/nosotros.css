@@ -1,0 +1,40 @@
+/* NOSOTROS */
+#nosotros .linea {
+    height: 4px;
+    background: linear-gradient(90deg, #3949AB, #00c6ff 80%);
+    border-radius: 3px;
+    margin-bottom: 0;
+}
+#nosotros .section-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #3949AB;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding-left: 15px;
+}
+#nosotros .gerente h4 {
+    color: #3949AB;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+#nosotros .gerente p {
+    font-size: 1.1rem;
+    color: #555;
+}
+#nosotros .bg-nosotros {
+    background-color: #f5f7fa;
+    border-left: 6px solid #3949AB;
+}
+@media (max-width: 767px) {
+    #nosotros .bg-nosotros {
+        border-left: none;
+        border-top: 6px solid #3949AB;
+        margin-top: 20px;
+    }
+    #nosotros .section-title {
+        text-align: center;
+        padding-left: 0;
+    }
+}

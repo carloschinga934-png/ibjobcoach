@@ -1,0 +1,344 @@
+/* === AJUSTES GENERALES CAROUSEL / MASTHEAD === */
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item {
+  position: relative;
+  display: none;
+  align-items: center;
+  width: 100%;
+  transition: transform 0.6s ease;
+  backface-visibility: hidden;
+  perspective: 1000px;
+
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.carousel-item-next,
+.carousel-item-prev {
+  position: absolute;
+  top: 0;
+}
+
+.carousel-item-next.carousel-item-left,
+.carousel-item-prev.carousel-item-right {
+  transform: translateX(0);
+}
+
+@supports (transform-style: preserve-3d) {
+
+  .carousel-item-next.carousel-item-left,
+  .carousel-item-prev.carousel-item-right {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.carousel-item-next,
+.active.carousel-item-right {
+  transform: translateX(100%);
+}
+
+@supports (transform-style: preserve-3d) {
+
+  .carousel-item-next,
+  .active.carousel-item-right {
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+.carousel-item-prev,
+.active.carousel-item-left {
+  transform: translateX(-100%);
+}
+
+@supports (transform-style: preserve-3d) {
+
+  .carousel-item-prev,
+  .active.carousel-item-left {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+/* Controles prev/next */
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+  color: #ffffff;
+  text-align: center;
+  opacity: 0.5;
+  z-index: 2;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-prev:focus,
+.carousel-control-next:hover,
+.carousel-control-next:focus {
+  color: #ffffff;
+  text-decoration: none;
+  outline: 0;
+  opacity: .9;
+}
+
+.carousel-control-prev {
+  left: 0;
+}
+
+.carousel-control-next {
+  right: 0;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+/* Indicadores */
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+}
+
+.carousel-indicators li {
+  position: relative;
+  flex: 0 1 auto;
+  width: 15px;
+  height: 3px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.carousel-indicators .active {
+  background-color: #ffffff;
+}
+
+/* Imagen del slider responsiva y alineada arriba */
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  filter: brightness(0.5);
+}
+
+/* === TEXTOS DEL SLIDER: ESTILOS PERSONALIZADOS === */
+
+/* Estos estilos provienen de tu antiguo style-min.css */
+.txt-slider,
+.txt-slider2,
+.txt-slider3,
+.txt-slider4,
+.txt-slider5 {
+  font-size: 38px;
+  font-weight: 700;
+  position: absolute;
+  line-height: normal;
+  text-align: left;
+  z-index: 2;
+  padding: 16px 104px 14px 30px;
+  border-radius: 10px;
+  color: white;
+
+  background: transparent;
+  width: 608px;
+  margin-left: 200px;
+}
+
+
+/* BOTONES EN SLIDER */
+.btn-slider,
+.btn-slider2,
+.btn-slider3,
+.btn-slider4,
+.btn-slider5 {
+  text-decoration: none;
+  background: var(--rojo);
+  color: #fff;
+  font-weight: 700;
+  height: 50px;
+  left: 0;
+  position: relative;
+  text-align: center;
+  z-index: 3;
+  border-radius: 25px;
+  margin: 16px 0 0 0;
+  width: fit-content;
+  font-size: 18px;
+  padding: 6px 30px;
+  line-height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+
+
+.btn-slider:hover,
+.btn-slider2:hover,
+.btn-slider3:hover,
+.btn-slider4:hover,
+.btn-slider5:hover {
+  background: var(--rojo-b);
+  text-decoration: underline;
+  color: #fff;
+}
+
+
+/* RESPONSIVE (pantallas medianas y chicas) */
+@media (max-width: 1023px) {
+  .carousel {
+    height: 400px;
+  }
+
+  .txt-slider,
+  .txt-slider2,
+  .txt-slider3,
+  .txt-slider4,
+  .txt-slider5 {
+    font-size: 20px;
+    left: 38px;
+    top: 100px;
+    width: auto;
+    min-width: 160px;
+    padding: 8px 18px;
+  }
+
+  .btn-slider,
+  .btn-slider2,
+  .btn-slider3,
+  .btn-slider4,
+  .btn-slider5 {
+    font-size: 15px;
+    width: 132px;
+    height: 2em;
+    padding: 4px;
+    top: 7.5em;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    height: 100%;
+    padding: 61px 0px 0px;
+  }
+
+  .txt-slider,
+  .txt-slider2,
+  .txt-slider3,
+  .txt-slider4,
+  .txt-slider5 {
+    font-size: 14px;
+    left: 38px;
+    top: 2em;
+    width: 110px;
+    padding: 4px;
+  }
+
+  .btn-slider,
+  .btn-slider2,
+  .btn-slider3,
+  .btn-slider4,
+  .btn-slider5 {
+    font-size: 13px;
+    width: 90%;
+    height: 26px;
+    top: 7em;
+  }
+
+  .carousel-item img {
+    height: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+
+  .txt-slider,
+  .txt-slider2,
+  .txt-slider3,
+  .txt-slider4,
+  .txt-slider5 {
+    font-size: 12px;
+    width: 90px;
+    padding: 2px 8px;
+  }
+
+  .btn-slider,
+  .btn-slider2,
+  .btn-slider3,
+  .btn-slider4,
+  .btn-slider5 {
+    font-size: 11px;
+    width: 90%;
+    height: 24px;
+    left: 5%;
+    top: 4em;
+    box-sizing: border-box;
+  }
+
+  .carousel-item img {
+    height: 11em;
+  }
+}
+
+/* Mejora de visibilidad para slider sobre imágenes */
+.txt-slider,
+.txt-slider2,
+.txt-slider3,
+.txt-slider4,
+.txt-slider5 {
+  text-shadow: 1px 2px 6px rgba(0, 0, 0, .18);
+}
+
+@media(min-width: 1200px) {
+  .carousel {
+    height: 700px;
+
+  }
+}

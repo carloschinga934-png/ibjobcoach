@@ -1,0 +1,123 @@
+/* ---- Tabla Artículos (estilos únicos) ---- */
+.ib-tecnicas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+
+.ib-tecnicas-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 18px rgba(44,62,80,0.13);
+    width: 100%;
+    max-width: 1200px; /* Más ancho */
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.ib-tecnicas-header {
+    padding: 1.2rem 2rem 1rem 2rem;
+    background: linear-gradient(90deg, #d90429 10%, #4376ec 90%);
+    border-bottom: 3px solid #d90429;
+}
+
+.ib-tecnicas-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: .3rem;
+    letter-spacing: .01em;
+}
+.ib-tecnicas-desc {
+    font-size: .97rem;
+    margin-bottom: 0;
+    opacity: 0.88;
+}
+
+.ib-tecnicas-table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    background: #fff;
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+.ib-tecnicas-table thead {
+    background: #181818;
+    color: #fff;
+    font-weight: 500;
+}
+.ib-tecnicas-table th,
+.ib-tecnicas-table td {
+    padding: 1rem 1.2rem;
+    text-align: left;
+}
+.ib-tecnicas-table th {
+    border-bottom: 2.5px solid #d90429;
+    font-size: .98rem;
+    font-weight: 500;
+}
+.ib-tecnicas-table tr:nth-child(even) td {
+    background: #f4f6f9;
+}
+.ib-tecnicas-table tr:hover td {
+    background: #ffe8eb;
+    transition: background 0.2s;
+}
+.ib-tecnicas-table td {
+    border-bottom: 1px solid #f0f0f0;
+    color: #222;
+}
+
+/* ---- Paginación con Bootstrap 4 ---- */
+.ib-paginacion {
+    margin-top: 24px;
+}
+.ib-paginacion nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ib-paginacion .pagination {
+    margin-bottom: 0;
+    background: none;
+    justify-content: center;
+}
+.ib-paginacion .page-link {
+    color: #d90429;
+    border-radius: 8px !important;
+    margin: 0 3px;
+    border: none;
+    font-weight: 500;
+    min-width: 38px;
+    min-height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background .2s;
+}
+.ib-paginacion .page-item.active .page-link,
+.ib-paginacion .page-link:hover {
+    background: #d90429;
+    color: #fff !important;
+}
+.ib-paginacion .page-item.disabled .page-link {
+    color: #aaa;
+    background: #f6f6f6;
+    cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .ib-tecnicas-card {
+        max-width: 99vw;
+        padding: 0 .2rem;
+    }
+    .ib-tecnicas-header  {
+        padding: 1rem;
+    }
+    .ib-tecnicas-table th, .ib-tecnicas-table td {
+        padding: .7rem .4rem;
+        font-size: .92rem;
+    }
+}

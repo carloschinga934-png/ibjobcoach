@@ -1,0 +1,334 @@
+:root {
+  --ib-red: #d90429;
+  --ib-dark: #181818;
+  --ib-white: #fff;
+}
+
+body {
+  background: var(--ib-white);
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.ib-wrapper {
+  display: flex;
+  min-height: 100vh;
+  background: var(--ib-white);
+}
+
+.ib-sidebar {
+  min-width: 230px;
+  background: var(--ib-dark);
+  color: var(--ib-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+  box-shadow: 2px 0 14px 0 rgba(0, 0, 0, .10);
+}
+
+.ib-logo-img {
+  width: 120px;
+  margin-bottom: 2rem;
+  border-radius: 16px;
+}
+
+.ib-sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.ib-nav-item {
+  margin-bottom: 10px;
+}
+
+.ib-nav-item a {
+  display: flex;
+  align-items: center;
+  color: var(--ib-white);
+  font-size: 16px;
+  padding: 12px 26px;
+  border-radius: 8px;
+  transition: background .15s, color .15s;
+  text-decoration: none;
+}
+
+.ib-nav-item a:hover,
+.ib-active a {
+  background: var(--ib-red);
+  color: var(--ib-white);
+}
+
+.ib-nav-item i {
+  margin-right: 10px;
+  font-size: 23px;
+}
+
+.ib-main-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: var(--ib-white);
+
+}
+
+.ib-navbar {
+  background: var(--ib-dark);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--ib-white);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+}
+
+.ib-navbar-inner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ib-navbar-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--ib-red);
+}
+
+.ib-navbar-search {
+  display: flex;
+  align-items: center;
+}
+
+.ib-navbar-search input {
+  border: 1.5px solid var(--ib-red);
+  border-radius: 20px;
+  padding: 6px 16px;
+  margin-right: 10px;
+  outline: none;
+  font-size: 15px;
+  background: var(--ib-white);
+  color: var(--ib-dark);
+  transition: border .2s;
+}
+
+.ib-navbar-search input:focus {
+  border-color: #b50223;
+}
+
+.ib-navbar-search button {
+  background: var(--ib-red);
+  border: none;
+  color: var(--ib-white);
+  padding: 6px 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background .17s;
+  display: flex;
+}
+
+.ib-navbar-search button:hover {
+  background: #b50223;
+}
+
+.ib-navbar-profile {
+  margin-left: 24px;
+}
+
+.ib-profile-dropdown {
+  position: relative;
+}
+
+.ib-profile-dropdown button {
+  background: none;
+  border: none;
+  color: var(--ib-red);
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.ib-dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 120%;
+  background: var(--ib-white);
+  color: var(--ib-dark);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.13);
+  min-width: 160px;
+  z-index: 100;
+  flex-direction: column;
+  gap: 0;
+}
+
+.ib-dropdown-menu a {
+  color: var(--ib-red);
+  padding: 12px 18px;
+  text-decoration: none;
+  display: block;
+  border-radius: 7px;
+  font-weight: 500;
+}
+
+.ib-dropdown-menu a:hover {
+  background: #f6f6f6;
+}
+
+.ib-dropdown-menu.ib-show {
+  display: flex;
+}
+
+.ib-content {
+  flex: 1;
+  padding: 2rem 1.5rem 1.2rem 1.5rem;
+  width: 100%;
+  max-width: 1400px;
+  /* Limita el ancho */
+  margin: 0 auto;
+  /* Centra horizontalmente */
+  box-sizing: border-box;
+}
+
+/* ========== DASHBOARD CARDS ========== */
+.ib-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 26px;
+  margin-bottom: 32px;
+}
+
+.ib-card {
+  background: var(--ib-white);
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+  padding: 24px 18px 18px 20px;
+  min-width: 0;
+  min-height: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border: 1.7px solid #eee;
+  transition: box-shadow .2s, border .15s;
+  color: var(--ib-dark);
+  position: relative;
+  text-decoration: none !important;
+  /* Quita azul de links visitados en algunos navegadores */
+  outline: none;
+}
+
+.ib-card:hover {
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.14);
+  border: 1.7px solid var(--ib-red);
+}
+
+/* Quitar la barra roja/negra de borde izquierdo */
+
+
+/* Quitar subrayado a los títulos de las tarjetas (links) */
+.ib-card,
+.ib-card .ib-card-title,
+.ib-card:visited .ib-card-title,
+.ib-card:hover .ib-card-title {
+  text-decoration: none !important;
+  color: var(--ib-dark) !important;
+}
+
+/* Quitar subrayado global de links dentro de cards */
+.ib-card a,
+.ib-card a:visited,
+.ib-card a:hover {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.ib-card-icon {
+  font-size: 32px;
+  margin-bottom: 8px;
+  color: var(--ib-red);
+}
+
+.ib-card-title {
+  font-size: 1.12rem;
+  font-weight: 500;
+  color: var(--ib-dark);
+}
+
+.ib-antiguo-header {
+  width: 100%;
+  text-align: center;
+  margin: 40px 0 24px 0;
+}
+
+.ib-antiguo-title {
+  color: var(--ib-white);
+  background: var(--ib-red);
+  border-radius: 14px;
+  padding: 16px 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 8px #b502237a;
+  margin-bottom: 0;
+}
+
+.ib-footer {
+  padding: 1.1rem 2rem;
+  background: var(--ib-dark);
+  color: var(--ib-white);
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid var(--ib-red);
+  border-radius: 0 0 0 22px;
+  margin-top: 32px;
+}
+
+.ib-footer a {
+  color: var(--ib-red);
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.ib-footer a:hover {
+  color: #b50223;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .ib-cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .ib-content {
+    max-width: 1040px;
+  }
+}
+
+@media (max-width: 900px) {
+  .ib-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ib-content {
+    max-width: 700px;
+    padding: 1rem 0.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .ib-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ib-content {
+    max-width: 98vw;
+    padding: 0.2rem;
+  }
+}

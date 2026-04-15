@@ -1,0 +1,118 @@
+/* --- Card principal de Registro de Contenidos --- */
+.ib-contenidos-card {
+    max-width: 700px;
+    margin: 3rem auto 2rem auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 28px rgba(44,62,80,0.10), 0 1.5px 3px rgba(44,62,80,.08);
+    overflow: hidden;
+}
+.ib-contenidos-header {
+    background: linear-gradient(90deg, #b92b27 20%, #1565C0 100%);
+    color: #fff;
+    padding: 2rem 2rem 1rem 2rem;
+    border-bottom: 4px solid #d90429;
+}
+.ib-contenidos-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+}
+.ib-contenidos-subtitle {
+    font-size: 1.08rem;
+    margin-bottom: 0.5rem;
+    color: #f0f0f0;
+}
+.ib-contenidos-form .form-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+    color: #212529;
+}
+.ib-contenidos-form .form-control,
+.ib-contenidos-form select {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #e0e0e0;
+    outline: none;
+    background: #f9f9f9;
+    padding: 0.5rem 0.25rem;
+    border-radius: 2px;
+    font-size: 1.03rem;
+    margin-bottom: 0.2rem;
+    transition: border-color 0.2s;
+}
+.ib-contenidos-form .form-control:focus,
+.ib-contenidos-form select:focus {
+    border-bottom: 2px solid #1565C0;
+    background: #f5faff;
+}
+.ib-contenidos-form textarea.form-control {
+    min-height: 110px;
+    resize: vertical;
+}
+.ib-contenidos-form input[type="file"] {
+    background: #faf6f6;
+    padding: 0.35rem 0;
+    color: #333;
+    border: none;
+}
+.ib-contenidos-form .text-danger {
+    font-size: 0.98rem;
+    color: #d90429;
+}
+.ib-contenidos-form button,
+.ib-contenidos-btn {
+    background: #1565C0;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 0.7rem 2rem;
+    font-weight: bold;
+    font-size: 1.08rem;
+    box-shadow: 0 2px 10px rgba(44,62,80,0.07);
+    transition: background 0.2s;
+    margin-top: 0.6rem;
+}
+.ib-contenidos-form button:hover,
+.ib-contenidos-btn:hover {
+    background: #b92b27;
+    color: #fff;
+}
+.ib-contenidos-alert-success {
+    background: #e0f9e3;
+    color: #226639;
+    padding: 13px 22px;
+    border-radius: 14px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+@media (max-width: 900px) {
+    .ib-contenidos-card { max-width: 97vw; }
+    .ib-contenidos-header { padding: 1.1rem 1rem 0.6rem 1rem; }
+}
+/* --- Card de perfil informativo de Contenidos --- */
+.ib-contenidos-card-profile {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.09);
+    padding: 2.5rem 1.3rem;
+    text-align: center;
+    margin-top: 2.7rem;
+}
+.ib-contenidos-card-profile img {
+    width: 100px;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 3px 15px rgba(44,62,80,0.11);
+    margin-bottom: 1.1rem;
+}
+.ib-contenidos-profile-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.ib-contenidos-profile-desc {
+    font-size: 1rem;
+    color: #676767;
+    margin-top: 0.2rem;
+}

@@ -1,0 +1,104 @@
+ .pago_ebook_section {
+     font-family: var(--fuente);
+     background-color: var(--gris-claro);
+     color: var(--negro);
+ }
+
+ .hero {
+     background: #fff;
+     padding: 4rem 1rem;
+     border-radius: .5rem;
+     text-align: center;
+     margin-bottom: 3rem;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+ }
+
+ .hero h1 {
+     color: var(--rojo);
+     font-size: 2.75rem;
+     margin-bottom: 1rem;
+ }
+
+ .hero p {
+     font-size: 1.125rem;
+     color: #555;
+     margin-bottom: 1.5rem;
+ }
+
+ .btn-hero {
+     background-color: var(--rojo);
+     color: #fff;
+     padding: .75rem 1.5rem;
+     font-size: 1rem;
+     border-radius: .375rem;
+ }
+
+ .ebook-card {
+     background-color: #fff;
+     border-radius: .75rem;
+     overflow: hidden;
+     transition: transform .3s, box-shadow .3s;
+     cursor: pointer;
+ }
+
+ .ebook-card:hover {
+     transform: translateY(-8px);
+     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+ }
+
+ .ebook-card img {
+     transition: transform .3s;
+     padding: 1rem;
+     background: #eee;
+     object-fit: contain;
+     height: 240px;
+     width: 100%;
+ }
+
+ .ebook-card:hover img {
+     transform: scale(1.05);
+ }
+
+ .card-body {
+     padding: 1rem;
+ }
+
+ .card-title {
+     font-weight: 600;
+     font-size: 1.1rem;
+     color: var(--negro);
+ }
+
+ .card-text {
+     font-size: .9rem;
+     color: #666;
+ }
+
+ .btn-primary {
+     background-color: var(--rojo);
+     border-color: var(--rojo);
+     transition: background-color .3s;
+ }
+
+ .btn-primary:hover {
+     background-color: #b40322;
+ }
+
+ .modal-content {
+     border-radius: .75rem;
+ }
+
+ .modal-header .btn-close {
+     filter: invert(20%);
+ }
+
+ .modal-title {
+     font-family: var(--fuente);
+     font-weight: 600;
+     color: var(--rojo);
+ }
+
+ #mensaje {
+     color: #d9534f;
+     font-weight: 500;
+ }

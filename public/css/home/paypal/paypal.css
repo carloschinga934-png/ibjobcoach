@@ -1,0 +1,135 @@
+.paypal-wrapper {
+    min-height: calc(100vh - 240px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    background: #f8fafb;
+}
+
+#paypal-direct-form {
+    background: #f9f9f9;
+    border-radius: 18px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 3px 18px 0 rgba(0,0,0,0.09);
+    padding: 2.5rem 2rem 2rem 2rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: padding 0.22s, max-width 0.22s;
+}
+
+#paypal-direct-form h3 {
+    color: #075d5d;
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 1.7rem;
+    letter-spacing: 0.01em;
+}
+
+#paypal-direct-form label,
+#paypal-direct-form .form-label {
+    color: #075d5d;
+    font-weight: 500;
+    margin-bottom: .4rem;
+    display: block;
+}
+
+#paypal-direct-form .form-control {
+    border-radius: 8px;
+    border: 1px solid #d2d2d2;
+    font-size: 1.05rem;
+    margin-bottom: 1.1rem;
+    padding: .7rem 1rem;
+    width: 100%;
+    background: #fff;
+    transition: font-size 0.2s, padding 0.2s;
+}
+
+.paypal-logo {
+    display: block;
+    margin: 0.8rem auto 1.1rem auto;
+    width: 120px;
+    max-width: 90vw;
+}
+
+.btn-paypal {
+    background: #075d5d;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 0.7rem 0;
+    width: 100%;
+    font-size: 1.12rem;
+    margin-top: 0.6rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    transition: filter 0.13s, background 0.18s, color 0.18s;
+    border: none;
+}
+
+.btn-paypal:hover, .btn-paypal:focus {
+    filter: brightness(0.96);
+    color: #075d5d;
+    background: #f1fcff;
+    border: 1.5px solid #075d5d;
+    outline: none;
+}
+
+/* Responsive: tablets, landscape phones */
+@media (max-width: 991px) {
+    .paypal-wrapper {
+        min-height: unset;
+        padding: 2.5rem 0 2.5rem 0;
+    }
+    #paypal-direct-form {
+        max-width: 98vw;
+        padding: 2rem 1rem 1.5rem 1rem;
+    }
+}
+
+/* Responsive: tablets y móviles medianos */
+@media (max-width: 768px) {
+    #paypal-direct-form {
+        padding: 1.7rem 0.7rem 1.2rem 0.7rem;
+    }
+    #paypal-direct-form h3 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Responsive: móviles grandes*/
+@media (max-width: 600px) {
+    .paypal-wrapper {
+        padding: 1.2rem 0 1.2rem 0;
+    }
+    #paypal-direct-form {
+        max-width: 99vw;
+        padding: 1.2rem 0.3rem 1.1rem 0.3rem;
+        border-radius: 10px;
+    }
+    #paypal-direct-form h3 {
+        font-size: 1.04rem;
+        margin-bottom: 1rem;
+    }
+    #paypal-direct-form .form-control {
+        font-size: 0.98rem;
+        padding: 0.6rem 0.7rem;
+    }
+}
+
+/* Responsive: móviles pequeños */
+@media (max-width: 400px) {
+    #paypal-direct-form {
+        padding: 0.7rem 0.07rem 0.7rem 0.07rem;
+        border-radius: 6px;
+    }
+    .paypal-logo {
+        width: 90px;
+    }
+    #paypal-direct-form h3 {
+        font-size: 0.92rem;
+    }
+}

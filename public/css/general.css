@@ -1,0 +1,174 @@
+:root {
+    --rojo: #D62828;
+    --negro: #000000;
+    --gris-claro: #f5f5f5;
+    --rojo-b: #da0404;
+    --mostaza: #E1B12C;
+    --fuente: 'Inter', sans-serif;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Sarabun", Arial, Helvetica, sans-serif;
+}
+
+/* Asegura que el modal esté por encima del backdrop */
+.modal-backdrop {
+    z-index: 1050 !important;
+    /* Bootstrap default */
+    background: none !important;
+    opacity: 0 !important;
+}
+
+.modal.show {
+    z-index: 2000 !important;
+    /* Súbelo para estar por encima del backdrop */
+}
+
+/* También puedes probar con: */
+.modal {
+    display: none;
+    /* Oculto por defecto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo semitransparente */
+}
+
+/* === RESET Y ELEMENTOS GLOBALES === */
+body {
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+a {
+    color: #f4b80c;
+}
+
+a:hover,
+a:active {
+    color: #fec503;
+}
+
+p {
+    line-height: 1.75;
+}
+
+html.no-js {
+    overflow-x: hidden;
+}
+
+/* === BOTONES REUTILIZABLES (SI LOS USAS EN MÁS DE UNA SECCIÓN) === */
+.btn {
+    font-weight: 700;
+}
+
+.btn-primary {
+    background-color: var(--rojo);
+    border-color: var(--rojo);
+}
+
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover,
+.btn-submit-suscripcion-meses:hover,
+.btn-submit-suscripcion:hover {
+    background-color: rgb(128, 204, 209) !important;
+    border-color: rgb(5, 78, 78) !important;
+    color: black;
+}
+
+.btn-primary:active,
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+}
+
+.btn.disabled,
+.btn:disabled {
+    background: silver;
+    color: #000;
+}
+
+/* === CARDS (SI LOS USAS EN TODO EL SITIO) === */
+.card-deck {
+    margin-bottom: 50px;
+}
+
+.card.price {
+    border: 3px #fd0808 solid;
+    border-radius: 14px;
+}
+
+.card.price img {
+    background: #04424d;
+    border-radius: 116px;
+    height: 60px;
+    margin: 0 auto;
+    position: relative;
+    top: 10px;
+    width: 60px;
+}
+
+.card-text {
+    color: #0f0f0f !important;
+    font-size: 22px !important;
+    font-weight: 700;
+}
+
+.card-title {
+    color: #fa0303;
+    font-size: 24px;
+    height: 32px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* === ALERTS/FOOTER SI ES GLOBAL === */
+.alert-success {
+    display: inline-table;
+    color: black;
+    background-color: var(--gris-claro);
+    width: auto;
+    margin-bottom: 0;
+    padding: 1.5rem 2rem;
+    border: none;
+}
+
+.close {
+    color: #fff;
+    opacity: 1;
+}
+
+/* === FORMULARIOS GLOBALES === */
+.form-control {
+    background-color: #f2f2f2;
+    border: 1.1px solid #bdbfc2;
+    height: 60px;
+    border-radius: 15px;
+    font-family: Arial;
+}

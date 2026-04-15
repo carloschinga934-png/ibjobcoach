@@ -1,0 +1,156 @@
+.pw-email-area {
+    background-size: cover;
+    background-position: center;
+    padding-top: 80px; 
+    padding-bottom: 40px;
+    min-height: 876px;
+    display: flex;
+    align-items: center;           
+    justify-content: flex-end;    
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.pw-email-wrap {
+    max-width: 420px;
+    width: 100%;
+    background: #fcfcfc;
+    border-radius: 16px;
+    box-shadow: 0 8px 28px rgba(44,62,80,.12);
+    padding: 2.2rem 2.2rem;
+    margin-right: 8vw;
+    z-index: 2;
+    margin-top: 80px;
+}
+
+.pw-email-title {
+    font-weight: 800;
+    font-size: 1.4rem;
+    color: #222;
+    letter-spacing: 0.02em;
+}
+
+.pw-email-label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #6d6d6d;
+}
+
+.pw-email-input {
+    border: 1.5px solid #b7b7b7;
+    border-radius: 10px;
+    padding: .66rem .92rem;
+    font-size: 1rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.pw-email-input:focus {
+    border-color: #f15025;
+    box-shadow: 0 0 0 .18rem rgba(241,80,37, .17);
+}
+
+.pw-email-btn {
+    background: linear-gradient(90deg, #ff414d 0%, #ff9234 100%);
+    color: #fff;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.pw-email-btn-sec {
+    background: #ff9234;
+    color: #fff;
+    margin-top: 4px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.pw-email-btn:hover, .pw-email-btn-sec:hover {
+    filter: brightness(1.07);
+    color: #fff;
+}
+
+/* Extra Small Devices - Móviles muy pequeños */
+@media (max-width: 375px) {
+    .pw-email-wrap {
+        max-width: 99vw;
+        padding: 1rem 0.3rem;
+        margin-top: 30px;
+    }
+    .pw-email-title {
+        font-size: 1.1rem;
+    }
+}
+
+/* Small Devices - Smartphones normales */
+@media (max-width: 425px) {
+    .pw-email-wrap {
+        max-width: 98vw;
+        padding: 1.1rem 0.4rem;
+        margin-top: 36px;
+    }
+    .pw-email-title {
+        font-size: 1.15rem;
+    }
+}
+
+/* Tablets verticales y móviles grandes */
+@media (max-width: 600px) {
+    .pw-email-wrap {
+        max-width: 96vw;
+        padding: 1.3rem 0.7rem;
+        margin-top: 40px;
+    }
+}
+
+/* Tablets en vertical (iPad/Android) */
+@media (max-width: 768px) {
+    .pw-email-area {
+        padding-top: 40px;
+        padding-bottom: 20px;
+        min-height: 550px;
+        justify-content: center;
+    }
+    .pw-email-wrap {
+        margin-right: 0;
+        max-width: 90vw;
+        padding: 1.4rem 1rem;
+        margin-top: 50px;
+    }
+}
+
+/* Tablets horizontales y laptops pequeñas */
+@media (max-width: 991px) {
+    .pw-email-area { justify-content: center; }
+    .pw-email-wrap {
+        margin-right: 0;
+        max-width: 80vw;
+        padding: 1.8rem 1.2rem;
+        margin-top: 60px;
+    }
+    .pw-email-input {
+        font-size: 0.75rem;
+    }
+}
+
+/* Laptops medianos */
+@media (max-width: 1200px) {
+    .pw-email-wrap {
+        max-width: 50vw; 
+        margin-top: 75px; 
+    }
+    .pw-email-input {
+        font-size: 1rem;
+    }
+}
+
+/* Pantallas grandes/4K */
+@media (min-width: 1400px) {
+    .pw-email-area {
+        justify-content: flex-end;
+        padding-right: 10vw;
+    }
+    .pw-email-wrap {
+        max-width: 420px;
+        margin-top: 80px;
+    }
+}

@@ -1,0 +1,72 @@
+.testi-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+section.bg-light {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+}
+.carousel-inner {
+    padding: 0;
+    min-height: unset;
+    display: block;
+}
+.carousel-item .d-flex {
+    margin-bottom: 0;
+}
+.testi-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,.08);
+    padding: 1.8rem 1.5rem;
+    text-align: center;
+    margin: 0 .75rem;
+}
+.testi-card img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 3px 10px rgba(0,0,0,.1);
+    margin-bottom: 1rem;
+}
+.testi-nombre {
+    font-size: 1.1rem;
+    margin-bottom: .25rem;
+}
+.testi-cargo {
+    font-size: .875rem;
+    color: #dc3545;
+    margin-bottom: 1rem;
+}
+.testi-mensaje {
+    font-size: .9rem;
+    color: #555;
+    line-height: 1.45;
+}
+
+/* Responsive grid para las columnas */
+@media (min-width:992px){
+    .testi-col { flex: 0 0 33.333%; max-width: 33.333%; }
+}
+@media (min-width:768px) and (max-width:991px){
+    .testi-col { flex: 0 0 50%; max-width: 50%; }
+}
+@media (max-width:767px){
+    .testi-col { flex: 0 0 100%; max-width: 100%; }
+}
+
+/* Botones Bootstrap: ajusta para no salirse del área visible */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 3rem;
+    height: 3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: .8;
+    z-index: 1;
+}
+.carousel-control-prev { left: 0.5rem; right: auto; }
+.carousel-control-next { right: 0.5rem; left: auto; }

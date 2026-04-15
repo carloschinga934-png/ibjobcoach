@@ -1,0 +1,128 @@
+.box-login {
+    background-size: cover;
+    background-position: center;
+    padding-top: 80px; 
+    padding-bottom: 40px;
+    min-height: 480px;
+    display: flex;
+    align-items: center;           
+    justify-content: flex-end;    
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* El formulario (container) */
+.box-login .container {
+    max-width: 560px;
+    width: 100%;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0,0,0,.12);
+    padding: 2rem 2.5rem;
+    margin-right: 4%;
+    margin-left: 0;
+    z-index: 2;
+    margin-top: 5%;
+}
+
+.titulo-login2 {
+    font-weight: 700;
+    font-size: 1.45rem;
+    color: #333;
+}
+
+.texto-login2 {
+    font-size: .9rem;
+    font-weight: 600;
+    color: #555;
+}
+
+/* Inputs */
+.DatosLogin {
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    padding: .65rem .85rem;
+    font-size: .95rem;
+}
+.DatosLogin:focus {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 .18rem rgba(220,53,69,.25);
+}
+
+/* Botones */
+.btn-login,
+.box-login .btn {
+    font-size: .9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    border-radius: 8px;
+}
+.btn-login {
+    background: #dc3545;
+    color: #fff;
+    padding: .45rem 1.2rem;
+}
+.btn-login:hover {
+    background: #c71f37;
+}
+.box-login .btn:first-of-type {
+    background: #dc3545;
+    color: #fff;
+}
+.box-login .btn:first-of-type:hover {
+    background: #c71f37;
+}
+.box-login .btn.prueba {
+    background: #dc9f49;
+    color: #fff;
+}
+.box-login .btn.prueba:hover {
+    background: #c48628;
+}
+
+.esqueceu-senha {
+    color: #dc3545;
+    font-size: .8rem;
+}
+.esqueceu-senha:hover {
+    text-decoration: underline;
+}
+
+/* --------- Responsive --------- */
+
+/* Tablets */
+@media (max-width: 991px) {
+    .box-login {
+        padding-top: 70px;
+        padding-bottom: 350px;
+    }
+    .box-login .container {
+        margin-right: 2%;
+        max-width: 98%;
+        padding: 1.5rem 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .box-login {
+        justify-content: center;
+        padding-top: 60px;
+        min-height: 280px;
+    }
+    .box-login .container {
+        margin-right: 0;
+        max-width: 96%;
+        padding: 1.2rem 0.6rem;
+    }
+}
+@media (max-width: 576px) {
+    .box-login {
+        padding-top: 50px;
+        padding-bottom: 16px;
+        min-height: 150px;
+    }
+    .box-login .container {
+        padding: .8rem .3rem;
+    }
+}

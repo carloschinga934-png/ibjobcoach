@@ -1,0 +1,109 @@
+.pw-code-area {
+    background-size: cover;
+    background-position: center;
+    min-height: 880px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.pw-code-wrap {
+    max-width: 460px;
+    width: 100%;
+    background: #f8f8fa;
+    border-radius: 16px;
+    box-shadow: 0 8px 28px rgba(44,62,80,.12);
+    padding: 2.5rem 2.5rem 2rem 2.5rem;
+    margin-right: 8vw;
+    z-index: 2;
+    margin-top: 80px;
+}
+
+.pw-code-title {
+    font-weight: 800;
+    font-size: 1.4rem;
+    color: #2a2a2a;
+    letter-spacing: 0.02em;
+}
+
+.pw-code-label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #656565;
+}
+
+.pw-code-input {
+    border: 1.5px solid #b7b7b7;
+    border-radius: 10px;
+    padding: .7rem 1rem;
+    font-size: 1rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.pw-code-input:focus {
+    border-color: #ff9234;
+    box-shadow: 0 0 0 .17rem rgba(255,146,52,.12);
+}
+
+.pw-code-btn {
+    background: linear-gradient(90deg, #ff9234 0%, #ff414d 100%);
+    color: #fff;
+    font-weight: 700;
+    border-radius: 10px;
+    margin-bottom: 6px;
+}
+
+.pw-code-btn:hover {
+    filter: brightness(1.07);
+    color: #fff;
+}
+
+/* Laptop 1366-1440px, Desktop */
+@media (max-width: 1440px) {
+    .pw-code-wrap { margin-right: 5vw; }
+}
+
+/* Tablet grande (iPad Pro 1024px x 1366px) */
+@media (max-width: 1100px) {
+    .pw-code-area { justify-content: center; }
+    .pw-code-wrap {
+        margin-right: 0;
+        max-width: 420px;
+        padding: 2rem 1.3rem;
+    }
+}
+
+/* Tablet standard (iPad vertical 768x1024) */
+@media (max-width: 900px) {
+    .pw-code-area { justify-content: center; }
+    .pw-code-wrap {
+        margin-right: 0;
+        max-width: 65vw;
+        padding: 2rem 2rem;
+    }
+    .pw-code-title {
+        font-size: 1.13rem;
+    }
+    .pw-code-input {
+        font-size: 0.98rem;
+        padding: .62rem .7rem;
+    }
+}
+
+/* Mobile grande (Galaxy S20 Ultra/iPhone 12+, <= 576px) */
+@media (max-width: 576px) {
+    .pw-code-area {
+        min-height: 180px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    .pw-code-wrap {
+        padding: 2rem 2rem;
+        max-width: 80vw;
+        margin-top: 7vw;
+        border-radius: 8px;
+    }
+    .pw-code-title { font-size: 1rem; }
+    .pw-code-input { font-size: 0.96rem; padding: .56rem .5rem; }
+}

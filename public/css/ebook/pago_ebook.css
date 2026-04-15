@@ -1,0 +1,88 @@
+.modal_contenido_ebook {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal_contenido_ebook_header {
+  text-align: center;
+}
+
+.modal_contenido_ebook_body {
+  display: flex;
+
+}
+
+.modal_contenido_ebook_body .col1 {
+  background-color: white;
+  text-align: center;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 30px 20px 20px;
+  border-right: 1px solid #80808057;
+
+}
+
+.col1>button {
+  background-color: white;
+  border: none;
+  text-align: left;
+  border-left: 4px solid transparent;
+  padding-left: 12px;
+}
+
+.modal_contenido_ebook_body .col2 {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  display: none;
+  padding: 20px 40px;
+}
+
+.modal_contenido_ebook_body .col2.activado {
+  display: flex;
+}
+
+.modal_contenido_ebook_body .col2 input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #b3b3b3c2;
+  padding: 10px;
+}
+
+/*Modal interno*/
+.col1 button.activado {
+  border-left: 4px solid #ffbb00;
+  color: rgb(0, 0, 0);
+}
+
+
+.cerrar {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.venci_y_anio {
+  display: flex;
+  gap: 10px;
+}
+
+.venci_y_anio>input {
+
+  width: 100% !important;
+}
